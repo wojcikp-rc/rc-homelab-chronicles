@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+---
+title: Home
+hide:
+    - toc
+---
+_Welcome to the Robust Concept, where glitches are embraced with a hug and a chuckle._
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## RC HomeLab Chronicles
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Dive into a compilation of [blog posts](blog/index.md) detailing my various homelab adventures. I hope you discover a blend of usefulness and humor within these pages, making your journey through them both enjoyable and informative.
