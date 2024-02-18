@@ -1,0 +1,10 @@
+authors:
+  wojcikp-rc:
+    name: Pawel Wojcik
+    description: Creator
+    avatar: https://github.com/wojcikp-rc.png
+  mi-gpt4all:
+    name: GPT4All
+    description: AI Creator
+    avatar: https://github.com/nomic-ai.png
+    url: https://github.com/nomic-ai/gpt4all
