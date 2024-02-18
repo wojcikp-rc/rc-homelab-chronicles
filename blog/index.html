@@ -12,6 +12,8 @@
         <link rel="prev" href="..">
       
       
+        <link rel="next" href="category/bare-metal-servers/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.7">
@@ -265,6 +267,8 @@
       
         
       
+        
+      
     
     
     
@@ -311,16 +315,139 @@
   
   
   
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+    
+    
+      
         
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Archive
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="category/bare-metal-servers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bare Metal Servers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -366,6 +493,160 @@
         <h1 id="rc-homelab-chronicles">RC HomeLab Chronicles</h1>
       </header>
       
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://github.com/wojcikp-rc.png" alt="Pawel Wojcik">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-02-18 00:00:00">February 18, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="category/bare-metal-servers/" class="md-meta__link">Bare Metal Servers</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="proxmox-ve-on-i3-n305-minipc"><a class="toclink" href="2024/02/18/proxmox-ve-on-i3-n305-minipc/">Proxmox VE on i3-N305 MiniPC</a></h2>
+<h3 id="overview"><a class="toclink" href="2024/02/18/proxmox-ve-on-i3-n305-minipc/#overview">Overview</a></h3>
+<p>I recently set up a new server for my virtualization workload using an i3-N305 Mini PC running <a href="https://www.proxmox.com/en/proxmox-virtual-environment/overview">Proxmox Virtual Environment</a>. Similar unit was reviewed by Patrick from STH in their <a href="https://www.servethehome.com/almost-a-decade-in-the-making-our-fanless-intel-i3-n305-2-5gbe-firewall-review">article</a>. Primary use case for this box is to host firewall and home automation containers.</p>
+<h3 id="configuration"><a class="toclink" href="2024/02/18/proxmox-ve-on-i3-n305-minipc/#configuration">Configuration</a></h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>Intel i3-N305</td>
+</tr>
+<tr>
+<td>RAM</td>
+<td>32GB DDR5</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>2 x 1TB NVMe</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ai-summary"><a class="toclink" href="2024/02/18/proxmox-ve-on-i3-n305-minipc/#ai-summary">AI Summary</a></h3>
+<p><em>"The i3-N305 Mini PC: A Stealthy Savior for Your Virtualized World" - Proxmox's secret weapon, this tiny hero tames virtualization tasks and home automation containers in silence.</em></p>
+    <nav class="md-post__action">
+      <a href="2024/02/18/proxmox-ve-on-i3-n305-minipc/">
+        Continue reading
+      </a>
+    </nav>
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://github.com/wojcikp-rc.png" alt="Pawel Wojcik">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-02-05 00:00:00">February 5, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="category/bare-metal-servers/" class="md-meta__link">Bare Metal Servers</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="bare-metal-servers"><a class="toclink" href="2024/02/05/bare-metal-servers/">Bare Metal Servers</a></h2>
+<h3 id="overview"><a class="toclink" href="2024/02/05/bare-metal-servers/#overview">Overview</a></h3>
+<p>Three of my servers are dedicated to <a href="https://www.proxmox.com/en/proxmox-virtual-environment/overview">Proxmox Virtual Environment</a> to manage virtualization workload. Adding to the mix is a NAS box running <a href="https://www.truenas.com/truenas-scale/">TrueNAS Scale</a>.</p>
+<h3 id="server-list"><a class="toclink" href="2024/02/05/bare-metal-servers/#server-list">Server list</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="2024/02/18/proxmox-ve-on-i3-n305-minipc/">pve-prod-1</a></td>
+<td>Proxmox VE on i3-N305 Mini PC</td>
+</tr>
+<tr>
+<td>pve-prod-2</td>
+<td>Proxmox VE on Dell PowerEdge R520</td>
+</tr>
+<tr>
+<td>pve-prod-3</td>
+<td>Proxmox VE on i9-9900K Tower PC</td>
+</tr>
+<tr>
+<td>nas-prod-1</td>
+<td>TrueNAS Scale on i7-8700 Tower PC</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ai-summary"><a class="toclink" href="2024/02/05/bare-metal-servers/#ai-summary">AI Summary</a></h3>
+<p><em>Bare Metal Servers: Where Virtualization and Fun Collide... But Only If You Enjoy Pain.</em></p>
+    <nav class="md-post__action">
+      <a href="2024/02/05/bare-metal-servers/">
+        Continue reading
+      </a>
+    </nav>
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  
+</nav>
+        
       
     </div>
   </div>
